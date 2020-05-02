@@ -87,7 +87,14 @@ h1.name {
 img.left_arm {
     position: relative;
     top: 31px;
-    left: 30px;
+    left: 90px;
+}
+
+img.left_hand {
+    position: relative;
+    top: -50px;
+    left: -20px;
+    transform-origin: 22px 41px;
 }
 
 img.right_arm {
@@ -190,5 +197,21 @@ footer {
     padding: 10px;
     color: #ccc;
     font-size: 14px;
-    \
+}
+
+.left_hand {
+  animation-name: wave-animation;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-play-state: paused;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate(  0.0deg) }
+   12% { transform: rotate(-10.0deg) }
+   37% { transform: rotate( 12.0deg) }
+   62% { transform: rotate(-10.0deg) }
+   87% { transform: rotate(9.0deg) }
+   100% { transform: rotate(  0.0deg) }
 }

@@ -32,10 +32,13 @@
 
   </header>
   <div class="main">
-  <div class="intro">
+  <div class="intro" 
+    onmouseover="document.getElementsByClassName('left_hand')[0].style.animationPlayState = 'running' ;" 
+    onmouseout="document.getElementsByClassName('left_hand')[0].style.animationPlayState = 'paused' ;" >
     <h2>Hi!</h2>
     <div class="figure">
-      <img class="left_arm"src="./left_arm.svg" alt="">
+      <img class="left_arm"src="./left_arm_single.svg" alt="">
+      <img src="./left_hand.svg" alt="" class="left_hand">
       <div class="profile"></div>
       <img class="right_arm"src="./right_arm.svg" alt="">
     </div>
